@@ -1,0 +1,143 @@
+            "uid": "TwiAXeCyhEqnGl+3gsQEFA",
+                "s": [
+                    {
+                        "fl": [
+                            {
+                                "aa": "SDU",
+                                "aad": "Santos Dumont, Rio de Janeiro",
+                                "da": "GRU",
+                                "dad": "Guarulhos, São Paulo",
+                                "ad": "2021-09-22T13:45:00",
+                                "dd": "2021-09-22T12:45:00",
+                                "c": "AD",
+                                "cn": "Azul",
+                                "cbn": "Economica",
+                                "b": {
+                                    "h": 1,
+                                    "c": 0,
+                                    "hw": 10,
+                                    "cw": 0
+                                },
+                                "s": [],
+                                "ns": 0,
+                                "fn": "4373",
+                                "md": 60,
+                                "sl": "17"
+                            }
+                        ],
+                        "si": 0,
+                        "o": "GRU",
+                        "d": "SDU",
+                        "c": "AD",
+                        "cn": "Azul",
+                        "tmd": 60,
+                        "ci": null,
+                        "op": "AZUL",
+                        "ns": 0
+                    },
+                    {
+                        "fl": [
+                            {
+                                "aa": "SDU",
+                                "aad": "Santos Dumont, Rio de Janeiro",
+                                "da": "GRU",
+                                "dad": "Guarulhos, São Paulo",
+                                "ad": "2021-09-22T22:00:00",
+                                "dd": "2021-09-22T20:50:00",
+                                "c": "AD",
+                                "cn": "Azul",
+                                "cbn": "Economica",
+                                "b": {
+                                    "h": 1,
+                                    "c": 0,
+                                    "hw": 10,
+                                    "cw": 0
+                                },
+                                "s": [],
+                                "ns": 0,
+                                "fn": "4644",
+                                "md": 70,
+                                "sl": "66"
+                            }
+                        ],
+                        "si": 0,
+                        "o": "GRU",
+                        "d": "SDU",
+                        "c": "AD",
+                        "cn": "Azul",
+                        "tmd": 70,
+                        "ci": null,
+                        "op": "AZUL",
+                        "ns": 0
+                    },
+                    {
+                        "fl": [
+                            {
+                                "aa": "GRU",
+                                "aad": "Guarulhos, São Paulo",
+                                "da": "SDU",
+                                "dad": "Santos Dumont, Rio de Janeiro",
+                                "ad": "2021-09-25T07:35:00",
+                                "dd": "2021-09-25T06:25:00",
+                                "c": "AD",
+                                "cn": "Azul",
+                                "cbn": "Economica",
+                                "b": {
+                                    "h": 1,
+                                    "c": 0,
+                                    "hw": 10,
+                                    "cw": 0
+                                },
+                                "s": [],
+                                "ns": 0,
+                                "fn": "4645",
+                                "md": 70,
+                                "sl": "79"
+                            }
+                        ],
+                        "si": 1,
+                        "o": "SDU",
+                        "d": "GRU",
+                        "c": "AD",
+                        "cn": "Azul",
+                        "tmd": 70,
+                        "ci": null,
+                        "op": "AZUL",
+                        "ns": 0
+                    }
+                ],
+                "di": {
+                    "m": 0.8505,
+                    "fb": "UU007DRO",
+                    "ft": "C",
+                    "pi": "63973",
+                    "pg": "STANDALONE"
+                },
+                "t": 500.63,
+                "i": 1,
+                "tx": 71.58,
+                "f": 40,
+                "d": 500.63,
+                "fr": 389.05,
+                "cf": 0,
+                "if": 0,
+                "pd": {
+                    "a": {
+                        "c": 1,
+                        "f": 40,
+                        "t": 71.58
+                    },
+                    "c": {
+                        "c": 0,
+                        "f": 0,
+                        "t": 0
+                    },
+                    "i": {
+                        "c": 0,
+                        "f": 0,
+                        "t": 0
+                    }
+                },
+                "hl": "CHEAPEST_DIRECT_FLIGHT",
+                "sid": "OO26H4u8yc"
+            }

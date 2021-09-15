@@ -1,0 +1,254 @@
+"uid" : "KU11oxiiFUidFM/RExWMwQ",
+          "segments" : [
+            {
+              "flights" : [
+                {
+                  "arrivalAirport" : "SDU",
+                  "arrivalAirportDescription" : "Santos Dumont, Rio de Janeiro",
+                  "departureAirport" : "GRU",
+                  "departureAirportDescription" : "Guarulhos, São Paulo",
+                  "arrivalDateTime" : "2021-09-22T19:50:00",
+                  "departureDateTime" : "2021-09-22T18:55:00",
+                  "ciaCode" : "LA",
+                  "ciaName" : "Latam",
+                  "cabin" : "Economica Padrao",
+                  "baggageInfo" : {
+                    "handBaggageQuantity" : 1,
+                    "checkedBaggageQuantity" : 0,
+                    "handBaggageWeight" : 10,
+                    "checkedBaggageWeight" : 0
+                  },
+                  "stops" : [ ],
+                  "numberOfStops" : 0,
+                  "flightNumber" : "3203",
+                  "minutesDuration" : 55,
+                  "seatsLeft" : null
+                }
+              ],
+              "segmentIndex" : 0,
+              "origin" : "GRU",
+              "destination" : "SDU",
+              "issuerCia" : "JJ",
+              "issuerCiaName" : "Latam",
+              "totalMinuteDuration" : 55,
+              "correlationId" : null,
+              "sellKey" : "PHJhdGVUb2tlbiBhZ3M9IldFQiIgYnJpPSIxMDAwIiBjbWk9IkFNRCIgY2lkPSIzMyIgY3VyPSJCUkwiIGVjdD0iQlIiIGR0Zj0iMjAyMS0wOS0yMlQxOTo1MDowMC4wMDBaIiBlc3Q9IlJKIiBlemk9IjcxMTAiIG1rcD0iMS4wMDAwIiBvZmQ9IntnOidBTURfcjowJyxhOidQVScsYjonU0FPVjMzMjVEJyxjOidTQU9WMzMyNUQnLGQ6J1NBT1YzMzI1RCcsZTpbNzAxMDRdLGY6W3thOidBRFQnLGI6MSxjOjQ0Mi44MCxkOjcxLjU4LGU6NDQuMjgsaDowLjAwLGk6MCxqOjAuMDAsazowLjAwLG06MCxmOltdLGc6WzMwXSxsOidBTUFERVVTXzIwMjEtMDktMTFUMTE6MDY6MzEuNTA0J31dLGg6JzU3NTA2NjEwJyxpOidiMzE0OGQ0MDg0Yzk0MzBmJyxtOjcwMTA0fSIgcHhzPSIzMCIgcGtnPSJWSEkiIHBsYz0iQlJMIiBmdHA9Ik0iIHBvdD0iNDQyLjgwIiBwd3Q9IjU1OC42NiIgcHJkPSJBSVIiIHNkdD0iMjAyMS0wOS0xMVQxMTowNjozMS45ODFaIiBzZ2s9IntjOlt7YTonTEEzMjAzLTIyMDkyMTE4NTUnLGI6J0dSVVNEVTIyMDkyMTE5NTBBTScsZDonMzE5JyxlOidHUU1SRU4xJyxoOidMQScsaTonJyxqOicnfV0sZTonMCd9IiBzb3Q9IjQ0Mi44MCIgc3d0PSI1NTguNjYiIHNjdD0iQlIiIGR0aT0iMjAyMS0wOS0yMlQxODo1NTowMC4wMDBaIiBzc3Q9IlNQIiBzemk9IjkxNDEiIGNvbT0iMC4wMDAwIiBjb3A9IjAiIGljdD0iMC4wMDAwIiBpY3A9IjAiIG1raT0iNzAxMDQiIHBsYT0iSkoiIHByZj0iNDQuMjgiIG1lYz0iQ0lBIiBjcHA9IjAiIGVtaT0iZmFsc2UiIHBweD0iMzAsNDQyLjgwLDQ0Mi44MCIgY214PSIzMCwwLjAwLDAuMDAiIGRta2lzPSIiIHByaXM9IiIgcG1rPSIwLjAwIiBwbWY9IjEuMDAwMCIvPg==",
+              "originProvider" : "AMD",
+              "numberOfStops" : 0
+            },
+            {
+              "flights" : [
+                {
+                  "arrivalAirport" : "CGH",
+                  "arrivalAirportDescription" : "Congonhas, São Paulo",
+                  "departureAirport" : "SDU",
+                  "departureAirportDescription" : "Santos Dumont, Rio de Janeiro",
+                  "arrivalDateTime" : "2021-09-25T13:05:00",
+                  "departureDateTime" : "2021-09-25T12:00:00",
+                  "ciaCode" : "LA",
+                  "ciaName" : "Latam",
+                  "cabin" : "Economica Padrao",
+                  "baggageInfo" : {
+                    "handBaggageQuantity" : 1,
+                    "checkedBaggageQuantity" : 0,
+                    "handBaggageWeight" : 10,
+                    "checkedBaggageWeight" : 0
+                  },
+                  "stops" : [ ],
+                  "numberOfStops" : 0,
+                  "flightNumber" : "3602",
+                  "minutesDuration" : 65,
+                  "seatsLeft" : null
+                }
+              ],
+              "segmentIndex" : 1,
+              "origin" : "SDU",
+              "destination" : "CGH",
+              "issuerCia" : "JJ",
+              "issuerCiaName" : "Latam",
+              "totalMinuteDuration" : 65,
+              "correlationId" : null,
+              "sellKey" : "PHJhdGVUb2tlbiBhZ3M9IldFQiIgYnJpPSIxMDAwIiBjbWk9IkFNRCIgY2lkPSIzMyIgY3VyPSJCUkwiIGR0Zj0iMjAyMS0wOS0yNVQxMzowNTowMC4wMDBaIiBta3A9IjEuMDAwMCIgb2ZkPSJ7ZzonQU1EX3I6MCcsaTonYjMxNDhkNDA4NGM5NDMwZid9IiBweHM9IjMwIiBwa2c9IlZISSIgcGxjPSJCUkwiIGZ0cD0iTSIgcG90PSI0NDIuODAiIHB3dD0iNTU4LjY2IiBwcmQ9IkFJUiIgc2R0PSIyMDIxLTA5LTExVDExOjA2OjMxLjk4MVoiIHNnaz0ie2M6W3thOidMQTM2MDItMjUwOTIxMTIwMCcsYjonU0RVQ0dIMjUwOTIxMTMwNUFNJyxkOiczMTknLGU6J0dZRVJFTjEnLGg6J0xBJyxpOicnLGo6Jyd9XSxlOicwJ30iIHNvdD0iNDQyLjgwIiBzd3Q9IjU1OC42NiIgY29tPSIwLjAwMDAiIGNvcD0iMCIgaWN0PSIwLjAwMDAiIGljcD0iMCIgbWtpPSI3MDEwNCIgcGxhPSJKSiIgcHJmPSI0NC4yOCIgbWVjPSJDSUEiIGNwcD0iMCIgZW1pPSJmYWxzZSIgZG1raXM9IiIgcHJpcz0iIiBwbWs9IjAuMDAiIHBtZj0iMS4wMDAwIi8-",
+              "originProvider" : "AMD",
+              "numberOfStops" : 0
+            },
+            {
+              "flights" : [
+                {
+                  "arrivalAirport" : "CGH",
+                  "arrivalAirportDescription" : "Congonhas, São Paulo",
+                  "departureAirport" : "SDU",
+                  "departureAirportDescription" : "Santos Dumont, Rio de Janeiro",
+                  "arrivalDateTime" : "2021-09-25T13:55:00",
+                  "departureDateTime" : "2021-09-25T12:50:00",
+                  "ciaCode" : "LA",
+                  "ciaName" : "Latam",
+                  "cabin" : "Economica Padrao",
+                  "baggageInfo" : {
+                    "handBaggageQuantity" : 1,
+                    "checkedBaggageQuantity" : 0,
+                    "handBaggageWeight" : 10,
+                    "checkedBaggageWeight" : 0
+                  },
+                  "stops" : [ ],
+                  "numberOfStops" : 0,
+                  "flightNumber" : "3504",
+                  "minutesDuration" : 65,
+                  "seatsLeft" : null
+                }
+              ],
+              "segmentIndex" : 1,
+              "origin" : "SDU",
+              "destination" : "CGH",
+              "issuerCia" : "JJ",
+              "issuerCiaName" : "Latam",
+              "totalMinuteDuration" : 65,
+              "correlationId" : null,
+              "sellKey" : "PHJhdGVUb2tlbiBhZ3M9IldFQiIgYnJpPSIxMDAwIiBjbWk9IkFNRCIgY2lkPSIzMyIgY3VyPSJCUkwiIGR0Zj0iMjAyMS0wOS0yNVQxMzo1NTowMC4wMDBaIiBta3A9IjEuMDAwMCIgb2ZkPSJ7ZzonQU1EX3I6MCcsaTonYjMxNDhkNDA4NGM5NDMwZid9IiBweHM9IjMwIiBwa2c9IlZISSIgcGxjPSJCUkwiIGZ0cD0iTSIgcG90PSI0NDIuODAiIHB3dD0iNTU4LjY2IiBwcmQ9IkFJUiIgc2R0PSIyMDIxLTA5LTExVDExOjA2OjMxLjk4MVoiIHNnaz0ie2M6W3thOidMQTM1MDQtMjUwOTIxMTI1MCcsYjonU0RVQ0dIMjUwOTIxMTM1NUFNJyxkOiczMTknLGU6J0dZRVJFTjEnLGg6J0xBJyxpOicnLGo6Jyd9XSxlOicwJ30iIHNvdD0iNDQyLjgwIiBzd3Q9IjU1OC42NiIgY29tPSIwLjAwMDAiIGNvcD0iMCIgaWN0PSIwLjAwMDAiIGljcD0iMCIgbWtpPSI3MDEwNCIgcGxhPSJKSiIgcHJmPSI0NC4yOCIgbWVjPSJDSUEiIGNwcD0iMCIgZW1pPSJmYWxzZSIgZG1raXM9IiIgcHJpcz0iIiBwbWs9IjAuMDAiIHBtZj0iMS4wMDAwIi8-",
+              "originProvider" : "AMD",
+              "numberOfStops" : 0
+            },
+            {
+              "flights" : [
+                {
+                  "arrivalAirport" : "CGH",
+                  "arrivalAirportDescription" : "Congonhas, São Paulo",
+                  "departureAirport" : "SDU",
+                  "departureAirportDescription" : "Santos Dumont, Rio de Janeiro",
+                  "arrivalDateTime" : "2021-09-25T16:40:00",
+                  "departureDateTime" : "2021-09-25T15:35:00",
+                  "ciaCode" : "LA",
+                  "ciaName" : "Latam",
+                  "cabin" : "Economica Padrao",
+                  "baggageInfo" : {
+                    "handBaggageQuantity" : 1,
+                    "checkedBaggageQuantity" : 0,
+                    "handBaggageWeight" : 10,
+                    "checkedBaggageWeight" : 0
+                  },
+                  "stops" : [ ],
+                  "numberOfStops" : 0,
+                  "flightNumber" : "3607",
+                  "minutesDuration" : 65,
+                  "seatsLeft" : null
+                }
+              ],
+              "segmentIndex" : 1,
+              "origin" : "SDU",
+              "destination" : "CGH",
+              "issuerCia" : "JJ",
+              "issuerCiaName" : "Latam",
+              "totalMinuteDuration" : 65,
+              "correlationId" : null,
+              "sellKey" : "PHJhdGVUb2tlbiBhZ3M9IldFQiIgYnJpPSIxMDAwIiBjbWk9IkFNRCIgY2lkPSIzMyIgY3VyPSJCUkwiIGR0Zj0iMjAyMS0wOS0yNVQxNjo0MDowMC4wMDBaIiBta3A9IjEuMDAwMCIgb2ZkPSJ7ZzonQU1EX3I6MCcsaTonYjMxNDhkNDA4NGM5NDMwZid9IiBweHM9IjMwIiBwa2c9IlZISSIgcGxjPSJCUkwiIGZ0cD0iTSIgcG90PSI0NDIuODAiIHB3dD0iNTU4LjY2IiBwcmQ9IkFJUiIgc2R0PSIyMDIxLTA5LTExVDExOjA2OjMxLjk4MVoiIHNnaz0ie2M6W3thOidMQTM2MDctMjUwOTIxMTUzNScsYjonU0RVQ0dIMjUwOTIxMTY0MEFNJyxkOiczMTknLGU6J0dZRVJFTjEnLGg6J0xBJyxpOicnLGo6Jyd9XSxlOicwJ30iIHNvdD0iNDQyLjgwIiBzd3Q9IjU1OC42NiIgY29tPSIwLjAwMDAiIGNvcD0iMCIgaWN0PSIwLjAwMDAiIGljcD0iMCIgbWtpPSI3MDEwNCIgcGxhPSJKSiIgcHJmPSI0NC4yOCIgbWVjPSJDSUEiIGNwcD0iMCIgZW1pPSJmYWxzZSIgZG1raXM9IiIgcHJpcz0iIiBwbWs9IjAuMDAiIHBtZj0iMS4wMDAwIi8-",
+              "originProvider" : "AMD",
+              "numberOfStops" : 0
+            },
+            {
+              "flights" : [
+                {
+                  "arrivalAirport" : "CGH",
+                  "arrivalAirportDescription" : "Congonhas, São Paulo",
+                  "departureAirport" : "SDU",
+                  "departureAirportDescription" : "Santos Dumont, Rio de Janeiro",
+                  "arrivalDateTime" : "2021-09-25T21:00:00",
+                  "departureDateTime" : "2021-09-25T19:55:00",
+                  "ciaCode" : "LA",
+                  "ciaName" : "Latam",
+                  "cabin" : "Economica Padrao",
+                  "baggageInfo" : {
+                    "handBaggageQuantity" : 1,
+                    "checkedBaggageQuantity" : 0,
+                    "handBaggageWeight" : 10,
+                    "checkedBaggageWeight" : 0
+                  },
+                  "stops" : [ ],
+                  "numberOfStops" : 0,
+                  "flightNumber" : "3615",
+                  "minutesDuration" : 65,
+                  "seatsLeft" : null
+                }
+              ],
+              "segmentIndex" : 1,
+              "origin" : "SDU",
+              "destination" : "CGH",
+              "issuerCia" : "JJ",
+              "issuerCiaName" : "Latam",
+              "totalMinuteDuration" : 65,
+              "correlationId" : null,
+              "sellKey" : "PHJhdGVUb2tlbiBhZ3M9IldFQiIgYnJpPSIxMDAwIiBjbWk9IkFNRCIgY2lkPSIzMyIgY3VyPSJCUkwiIGR0Zj0iMjAyMS0wOS0yNVQyMTowMDowMC4wMDBaIiBta3A9IjEuMDAwMCIgb2ZkPSJ7ZzonQU1EX3I6MCcsaTonYjMxNDhkNDA4NGM5NDMwZid9IiBweHM9IjMwIiBwa2c9IlZISSIgcGxjPSJCUkwiIGZ0cD0iTSIgcG90PSI0NDIuODAiIHB3dD0iNTU4LjY2IiBwcmQ9IkFJUiIgc2R0PSIyMDIxLTA5LTExVDExOjA2OjMxLjk4MloiIHNnaz0ie2M6W3thOidMQTM2MTUtMjUwOTIxMTk1NScsYjonU0RVQ0dIMjUwOTIxMjEwMEFNJyxkOiczMTknLGU6J0dZRVJFTjEnLGg6J0xBJyxpOicnLGo6Jyd9XSxlOicwJ30iIHNvdD0iNDQyLjgwIiBzd3Q9IjU1OC42NiIgY29tPSIwLjAwMDAiIGNvcD0iMCIgaWN0PSIwLjAwMDAiIGljcD0iMCIgbWtpPSI3MDEwNCIgcGxhPSJKSiIgcHJmPSI0NC4yOCIgbWVjPSJDSUEiIGNwcD0iMCIgZW1pPSJmYWxzZSIgZG1raXM9IiIgcHJpcz0iIiBwbWs9IjAuMDAiIHBtZj0iMS4wMDAwIi8-",
+              "originProvider" : "AMD",
+              "numberOfStops" : 0
+            },
+            {
+              "flights" : [
+                {
+                  "arrivalAirport" : "CGH",
+                  "arrivalAirportDescription" : "Congonhas, São Paulo",
+                  "departureAirport" : "SDU",
+                  "departureAirportDescription" : "Santos Dumont, Rio de Janeiro",
+                  "arrivalDateTime" : "2021-09-25T21:35:00",
+                  "departureDateTime" : "2021-09-25T20:30:00",
+                  "ciaCode" : "LA",
+                  "ciaName" : "Latam",
+                  "cabin" : "Economica Padrao",
+                  "baggageInfo" : {
+                    "handBaggageQuantity" : 1,
+                    "checkedBaggageQuantity" : 0,
+                    "handBaggageWeight" : 10,
+                    "checkedBaggageWeight" : 0
+                  },
+                  "stops" : [ ],
+                  "numberOfStops" : 0,
+                  "flightNumber" : "3502",
+                  "minutesDuration" : 65,
+                  "seatsLeft" : null
+                }
+              ],
+              "segmentIndex" : 1,
+              "origin" : "SDU",
+              "destination" : "CGH",
+              "issuerCia" : "JJ",
+              "issuerCiaName" : "Latam",
+              "totalMinuteDuration" : 65,
+              "correlationId" : null,
+              "sellKey" : "PHJhdGVUb2tlbiBhZ3M9IldFQiIgYnJpPSIxMDAwIiBjbWk9IkFNRCIgY2lkPSIzMyIgY3VyPSJCUkwiIGR0Zj0iMjAyMS0wOS0yNVQyMTozNTowMC4wMDBaIiBta3A9IjEuMDAwMCIgb2ZkPSJ7ZzonQU1EX3I6MCcsaTonYjMxNDhkNDA4NGM5NDMwZid9IiBweHM9IjMwIiBwa2c9IlZISSIgcGxjPSJCUkwiIGZ0cD0iTSIgcG90PSI0NDIuODAiIHB3dD0iNTU4LjY2IiBwcmQ9IkFJUiIgc2R0PSIyMDIxLTA5LTExVDExOjA2OjMxLjk4MloiIHNnaz0ie2M6W3thOidMQTM1MDItMjUwOTIxMjAzMCcsYjonU0RVQ0dIMjUwOTIxMjEzNUFNJyxkOiczMTknLGU6J0dZRVJFTjEnLGg6J0xBJyxpOicnLGo6Jyd9XSxlOicwJ30iIHNvdD0iNDQyLjgwIiBzd3Q9IjU1OC42NiIgY29tPSIwLjAwMDAiIGNvcD0iMCIgaWN0PSIwLjAwMDAiIGljcD0iMCIgbWtpPSI3MDEwNCIgcGxhPSJKSiIgcHJmPSI0NC4yOCIgbWVjPSJDSUEiIGNwcD0iMCIgZW1pPSJmYWxzZSIgZG1raXM9IiIgcHJpcz0iIiBwbWs9IjAuMDAiIHBtZj0iMS4wMDAwIi8-",
+              "originProvider" : "AMD",
+              "numberOfStops" : 0
+            }
+          ],
+          "debugInformation" : {
+            "markup" : 1,
+            "fareBasis" : "GQMREN1",
+            "fareType" : "M",
+            "pricingId" : "70104",
+            "packageGroup" : "VHI"
+          },
+          "total" : 558.66,
+          "installments" : 1,
+          "tax" : 71.58,
+          "fee" : 44.28,
+          "displayFare" : 558.66,
+          "fare" : 442.8,
+          "childFare" : 0,
+          "infantFare" : 0,
+          "priceDetails" : {
+            "adult" : {
+              "count" : 1,
+              "fee" : 44.28,
+              "tax" : 71.58
+            },
+            "child" : {
+              "count" : 0,
+              "fee" : 0,
+              "tax" : 0
+            },
+            "infant" : {
+              "count" : 0,
+              "fee" : 0,
+              "tax" : 0
+            }
+          },
+          "highlight" : "CHEAPEST_DIRECT_FLIGHT",
+          "sid" : "kjyrsO6vby"
+        }

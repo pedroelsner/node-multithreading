@@ -1,0 +1,319 @@
+PUT flight-cvc/_mapping  
+  {  
+    "mappings" : {
+      "properties" : {
+        "cf" : {
+          "type" : "long"
+        },
+        "d" : {
+          "type" : "float"
+        },
+        "di" : {
+          "properties" : {
+            "fb" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "ft" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "m" : {
+              "type" : "float"
+            },
+            "pg" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "pi" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            }
+          }
+        },
+        "f" : {
+          "type" : "long"
+        },
+        "fr" : {
+          "type" : "float"
+        },
+        "hl" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "i" : {
+          "type" : "long"
+        },
+        "if" : {
+          "type" : "long"
+        },
+        "pd" : {
+          "properties" : {
+            "a" : {
+              "properties" : {
+                "c" : {
+                  "type" : "long"
+                },
+                "f" : {
+                  "type" : "long"
+                },
+                "t" : {
+                  "type" : "float"
+                }
+              }
+            },
+            "c" : {
+              "properties" : {
+                "c" : {
+                  "type" : "long"
+                },
+                "f" : {
+                  "type" : "long"
+                },
+                "t" : {
+                  "type" : "long"
+                }
+              }
+            },
+            "i" : {
+              "properties" : {
+                "c" : {
+                  "type" : "long"
+                },
+                "f" : {
+                  "type" : "long"
+                },
+                "t" : {
+                  "type" : "long"
+                }
+              }
+            }
+          }
+        },
+        "s" : {
+          "type": "nested",
+          "properties" : {
+            "c" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "cn" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "d" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "fl" : {
+              "properties" : {
+                "aa" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "aad" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "ad" : {
+                  "type" : "date"
+                },
+                "b" : {
+                  "properties" : {
+                    "c" : {
+                      "type" : "long"
+                    },
+                    "cw" : {
+                      "type" : "long"
+                    },
+                    "h" : {
+                      "type" : "long"
+                    },
+                    "hw" : {
+                      "type" : "long"
+                    }
+                  }
+                },
+                "c" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "cbn" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "cn" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "da" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "dad" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "dd" : {
+                  "type" : "date"
+                },
+                "fn" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                },
+                "t" : {
+                  "type" : "float"
+                },
+                "md" : {
+                  "type" : "long"
+                },
+                "ns" : {
+                  "type" : "long"
+                },
+                "sl" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                      "type" : "keyword",
+                      "ignore_above" : 256
+                    }
+                  }
+                }
+              }
+            },
+            "ns" : {
+              "type" : "long"
+            },
+            "o" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "op" : {
+              "type" : "text",
+              "fields" : {
+                "keyword" : {
+                  "type" : "keyword",
+                  "ignore_above" : 256
+                }
+              }
+            },
+            "si" : {
+              "type" : "long"
+            },
+            "tmd" : {
+              "type" : "long"
+            }
+          }
+        },
+        "sid" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "t" : {
+          "type" : "float"
+        },
+        "tx" : {
+          "type" : "float"
+        },
+        "uid" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        }
+      }
+    }
+  }

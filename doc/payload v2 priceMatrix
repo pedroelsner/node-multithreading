@@ -1,0 +1,160 @@
+    "priceMatrix": {
+        "airCompanies": [
+            {
+                "cells": [
+                    {
+                        "type": 0,
+                        "price": 500.63,
+                        "bestInstallments": 1,
+                        "tax": 111.58,
+                        "fee": 0,
+                        "fare": 389.05,
+                        "originAirport": null,
+                        "destinationAirport": null
+                    },
+                    {
+                        "type": 1,
+                        "price": 692.75,
+                        "bestInstallments": 1,
+                        "tax": 128.05,
+                        "fee": 0,
+                        "fare": 564.7,
+                        "originAirport": null,
+                        "destinationAirport": null
+                    },
+                    {
+                        "type": 2,
+                        "price": 0,
+                        "bestInstallments": 1,
+                        "tax": 0,
+                        "fee": 0,
+                        "fare": 0,
+                        "originAirport": null,
+                        "destinationAirport": null
+                    }
+                ],
+                "airCompany": "Azul",
+                "bestPriceAirCompany": 500.63,
+                "ciaCode": "AD",
+                "originSource": "AD",
+                "searchKey": "b3deb27d-17a9-4be3-a991-7882a1f1e662"
+            },
+            {
+                "cells": [
+                    {
+                        "type": 0,
+                        "price": 500.86,
+                        "bestInstallments": 1,
+                        "tax": 111.58,
+                        "fee": 0,
+                        "fare": 389.28,
+                        "originAirport": null,
+                        "destinationAirport": null
+                    },
+                    {
+                        "type": 1,
+                        "price": 0,
+                        "bestInstallments": 1,
+                        "tax": 0,
+                        "fee": 0,
+                        "fare": 0,
+                        "originAirport": null,
+                        "destinationAirport": null
+                    },
+                    {
+                        "type": 2,
+                        "price": 0,
+                        "bestInstallments": 1,
+                        "tax": 0,
+                        "fee": 0,
+                        "fare": 0,
+                        "originAirport": null,
+                        "destinationAirport": null
+                    }
+                ],
+                "airCompany": "Gol",
+                "bestPriceAirCompany": 500.86,
+                "ciaCode": "G3",
+                "originSource": "G3",
+                "searchKey": "1371ad46-3378-4fe3-bf64-a171accfb868"
+            },
+            {
+                "cells": [
+                    {
+                        "type": 0,
+                        "price": 522.36,
+                        "bestInstallments": 1,
+                        "tax": 112.56,
+                        "fee": 0,
+                        "fare": 409.8,
+                        "originAirport": null,
+                        "destinationAirport": null
+                    },
+                    {
+                        "type": 1,
+                        "price": 2895.17,
+                        "bestInstallments": 1,
+                        "tax": 328.27,
+                        "fee": 0,
+                        "fare": 2566.9,
+                        "originAirport": null,
+                        "destinationAirport": null
+                    },
+                    {
+                        "type": 2,
+                        "price": 0,
+                        "bestInstallments": 1,
+                        "tax": 0,
+                        "fee": 0,
+                        "fare": 0,
+                        "originAirport": null,
+                        "destinationAirport": null
+                    }
+                ],
+                "airCompany": "Latam",
+                "bestPriceAirCompany": 522.36,
+                "ciaCode": "LA",
+                "originSource": "LA",
+                "searchKey": "0326bfb0-eaff-4b13-b106-34334c4393ad"
+            },
+            {
+                "cells": [
+                    {
+                        "type": 0,
+                        "price": 522.36,
+                        "bestInstallments": 1,
+                        "tax": 112.56,
+                        "fee": 0,
+                        "fare": 409.8,
+                        "originAirport": null,
+                        "destinationAirport": null
+                    },
+                    {
+                        "type": 1,
+                        "price": 0,
+                        "bestInstallments": 1,
+                        "tax": 0,
+                        "fee": 0,
+                        "fare": 0,
+                        "originAirport": null,
+                        "destinationAirport": null
+                    },
+                    {
+                        "type": 2,
+                        "price": 0,
+                        "bestInstallments": 1,
+                        "tax": 0,
+                        "fee": 0,
+                        "fare": 0,
+                        "originAirport": null,
+                        "destinationAirport": null
+                    }
+                ],
+                "airCompany": "Latam",
+                "bestPriceAirCompany": 522.36,
+                "ciaCode": "JJ",
+                "originSource": "JJ",
+                "searchKey": "0efa7603-6c3e-4c48-b639-b82ac0694d12"
+            }
+        ]
+    },

@@ -1,0 +1,67 @@
+    "filtersData": {
+        "airCompanies": [
+            {
+                "ciaCode": "AD",
+                "ciaName": "Azul",
+                "minPrice": 500.63
+            },
+            {
+                "ciaCode": "LA",
+                "ciaName": "Latam",
+                "minPrice": 522.36
+            },
+            {
+                "ciaCode": "JJ",
+                "ciaName": "Latam",
+                "minPrice": 522.36
+            },
+            {
+                "ciaCode": "G3",
+                "ciaName": "Gol",
+                "minPrice": 500.86
+            }
+        ],
+        "numberOfStops": [
+            {
+                "minPrice": 500.63,
+                "stops": 0
+            },
+            {
+                "minPrice": 692.75,
+                "stops": 1
+            }
+        ],
+        "price": {
+            "minPrice": 500.63,
+            "maxPrice": 5151.92
+        },
+        "duration": [
+            {
+                "minDuration": 50,
+                "maxDuration": 800
+            },
+            {
+                "minDuration": 60,
+                "maxDuration": 805
+            }
+        ],
+        "airportsInbound": [
+            {
+                "description": "Santos Dumont",
+                "iata": "SDU",
+                "minPrice": 0
+            }
+        ],
+        "airportsOutbound": [
+            {
+                "description": "Guarulhos",
+                "iata": "GRU",
+                "minPrice": 0
+            },
+            {
+                "description": "Congonhas",
+                "iata": "CGH",
+                "minPrice": 0
+            }
+        ]
+    },
