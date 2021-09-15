@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 import stringify from 'safe-json-stringify';
 
-import { ELASTIC_INDEX } from '../utils/constants';
+import { ELASTIC_INDEX } from '../utils/constants.js';
 
 
 const fetchSearchAsync = async (req, res, elastic) => {

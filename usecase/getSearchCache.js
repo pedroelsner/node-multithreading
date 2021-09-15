@@ -1,4 +1,4 @@
-import { ELASTIC_INDEX } from '../utils/constants';
+import { ELASTIC_INDEX } from '../utils/constants.js';
 
 const getSearchCache = async (req, res, elastic) => {
     try {

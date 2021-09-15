@@ -8,9 +8,11 @@ import express from 'express';
 import cors from 'cors';
 import { Client } from '@elastic/elasticsearch';
 
-import fetchSearchAsync from './service/fetchSearchAsync';
-import nanoid from './utils/nanoid';
-import getSearchCache from './usecase/getSearchCache';
+import nanoid from './utils/nanoid.js';
+
+import fetchSearchAsync from './service/fetchSearchAsync.js';
+import getSearchCache from './usecase/getSearchCache.js';
+
 
 const elastic = new Client({ node: 'http://localhost:9200' });
 
