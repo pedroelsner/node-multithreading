@@ -16,7 +16,7 @@
     "express": "^4.17.1",
     "nanoid": "^3.1.25",
     "node-fetch": "^3.0.0",
-    "safe-json-stringify": "^1.2.0"
+    "workerpool": "^6.1.5"
   },
   "devDependencies": {}
 }

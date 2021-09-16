@@ -6,53 +6,71 @@ process.env.UV_THREADPOOL_SIZE = os.cpus().length;
 
 import express from 'express';
 import cors from 'cors';
-import { Client } from '@elastic/elasticsearch';
 
-import nanoid from './utils/nanoid.js';
+import workerPool from './worker/pool.js';
 
-import fetchSearchAsync from './service/fetchSearchAsync.js';
+import createSearchCache from './usecase/createSearchCache.js';
 import getSearchCache from './usecase/getSearchCache.js';
 
-
-const elastic = new Client({ node: 'http://localhost:9200' });
 
 const app = express();
 app.use(cors());
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-// Define 'searchId'
-app.use(async (req, res, next) => {
-    res.locals.searchId = req.body.search.id || (await nanoid());
-    next();
-});
+
+app.get('/pulse', (req, res) => {
+    res.send();
+})
 
 
 app.post('/search/async', async (req, res) => {
     try {
-        await fetchSearchAsync(req, res, elastic);
+        // Stream send paritial response
+        const sid = await createSearchCache(req, res);
+
+        // Prepara to send complete response
+        const cache = await getSearchCache(sid, {});
+
+        // New thread for JSON.stringify
+        const pool = workerPool.get();
+        const data = await pool.stringify(cache.body);
+        res.write(data);
+
         res.send();
 
     } catch (err) {
-        console.log(err);
+        console.log(err.message);
         res.sendStatus(500)
     }
 });
 
-app.post('/seach/filter', async (req, res) => {
+
+app.post('/search/filter', async (req, res) => {
     try {
-        const response = await getSearchCache(req, res, elastic);
-        res.send(response.body.hits);
+        const { sid, ...body } = req.body;
+
+        if (!sid) {
+            throw new Error('request error: sid requided');
+        }
+
+        const cache = await getSearchCache(sid, body);
+        res.send(cache.body);
 
     } catch (err) {
-        console.error(err);
+        console.error(err.message);
         res.sendStatus(500);
     }
 });
 
 
+(async () => {
+    const workerOptions = { minWorkers: 'max' }
+    await workerPool.init(workerOptions)
 
-const PORT = process.env.PORT;
-app.listen(PORT, () => {
-    console.log(`Listening at http://localhost:${PORT}`)
-});
+    const PORT = process.env.PORT;
+    app.listen(PORT, () => {
+        console.log(`Listening at http://localhost:${PORT}`)
+    });
+})();
+

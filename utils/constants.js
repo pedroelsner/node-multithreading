@@ -5,4 +5,3 @@ export default {
     ELASTIC_INDEX,
     ELASTIC_TTL,
 }
-''

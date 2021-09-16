@@ -1,0 +1,1 @@
+autocannon -m POST -H "Content-Type: application/json" -b '{"sid":"ECqERgVwXJSJ"}' http://localhost:3000/search/filter
