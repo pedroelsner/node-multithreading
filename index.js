@@ -10,7 +10,6 @@ import cors from 'cors';
 import workerPool from './worker/pool.js';
 
 import createSearchCache from './usecase/createSearchCache.js';
-import getSearchCache from './usecase/getSearchCache.js';
 
 
 const app = express();
@@ -29,14 +28,10 @@ app.post('/search/async', async (req, res) => {
         // Stream send paritial response
         const sid = await createSearchCache(req, res);
 
-        // Prepara to send complete response
-        const cache = await getSearchCache(sid, {});
-
-        // New thread for JSON.stringify
+        // New thread
         const pool = workerPool.get();
-        const data = await pool.stringify(cache.body);
+        const data = await pool.getSearchCache(sid, {});
         res.write(data);
-
         res.send();
 
     } catch (err) {
@@ -48,14 +43,17 @@ app.post('/search/async', async (req, res) => {
 
 app.post('/search/filter', async (req, res) => {
     try {
-        const { sid, ...body } = req.body;
+        const { sid, ...params } = req.body;
 
         if (!sid) {
             throw new Error('request error: sid requided');
         }
 
-        const cache = await getSearchCache(sid, body);
-        res.send(cache.body);
+        // New thread
+        const pool = workerPool.get();
+        const data = await pool.getSearchCache(sid, params);
+        res.setHeader('Content-Type', 'application/json');
+        res.send(data);
 
     } catch (err) {
         console.error(err.message);

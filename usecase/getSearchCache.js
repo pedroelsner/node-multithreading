@@ -33,6 +33,53 @@ const makeAllFilters = (filterby) => {
     ];
 }
 
+/**
+ * Return filter meta for front-end
+ * @param {object} aggs Aggregation
+ * @returns 
+ */
+const makeFilterMeta = (aggs) => {
+
+    const airCompanies = aggs.flights.air_companies.buckets.map(item => {
+        return {
+            stops: item.key,
+            minPrice: item.min_price.value
+        }
+    });
+
+    const numberOfStops = aggs.flights.number_of_stops.buckets.map(item => {
+        return {
+            stops: item.key,
+            minPrice: item.min_price.value
+        }
+    });
+
+    const duration = [
+        {
+            minDuration: aggs.flights.duration_segment_0.
+                min_duration.value,
+            maxDuration: aggs.flights.duration_segment_0.
+                max_duration.value
+        },
+        {
+            minDuration: aggs.flights.duration_segment_1.
+                min_duration.value,
+            maxDuration: aggs.flights.duration_segment_1.
+                max_duration.value
+        }
+    ]
+
+    return {
+        airCompanies,
+        numberOfStops,
+        price: {
+            minPrice: aggs.min_price.value,
+            maxPrice: aggs.max_price.value
+        },
+        duration
+    }
+}
+
 
 /**
  * Query elastic with pagination, order, filters
@@ -41,12 +88,12 @@ const makeAllFilters = (filterby) => {
  * @param {object} body 
  * @returns {object}
  */
-const getSearchCache = async (sid, body) => {
+const getSearchCache = async (sid, params) => {
 
     // Define default
-    const page = body.page || { from: 0, size: 10 };
-    const sortby = body.sortby || [{ field: 't', order: 'asc' }];
-    const filterby = body.filterby || [{ field: 's.tmd', condition: 'gte', value: 0 }];
+    const page = params.page || { from: 0, size: 10 };
+    const sortby = params.sortby || [{ field: 't', order: 'asc' }];
+    const filterby = params.filterby || [{ field: 's.tmd', condition: 'gte', value: 0 }];
 
     // Make sort condition
     const sort = makeSort(sortby);
@@ -55,11 +102,15 @@ const getSearchCache = async (sid, body) => {
     const [docFilter, nestedFilter] = makeAllFilters(filterby);
 
 
-    const response = await elastic().search({
+    const { body } = await elastic().search({
         index: ELASTIC_INDEX,
         body: {
             from: page.from,
             size: page.size,
+            _source: [
+                "uid", "di", "t", "i", "tx", "f",
+                "d", "fr", "cf", "if", "pd", "hl"
+            ],
             query: {
                 bool: {
                     filter: [
@@ -98,13 +149,13 @@ const getSearchCache = async (sid, body) => {
                                 max_duration: { max: { field: 's.tmd' } }
                             }
                         },
-                        aircompanies: {
+                        air_companies: {
                             terms: { field: 's.cn.keyword' },
                             aggs: {
                                 min_price: { min: { field: 's.t' } }
                             }
                         },
-                        numberOfStops: {
+                        number_of_stops: {
                             terms: { field: 's.ns' },
                             aggs: {
                                 min_price: { min: { field: 's.t' } }
@@ -118,7 +169,24 @@ const getSearchCache = async (sid, body) => {
         }
     });
 
-    return response;
+    const list = body.hits.hits.map(item => {
+        const entry = item._source;
+        entry.s = item.inner_hits.s.hits.hits.map(s => s._source);
+        return entry;
+    });
+
+    const filterMeta = makeFilterMeta(body.aggregations);
+
+    return JSON.stringify({
+        sid,
+        completed: true,
+        total: body.hits.total.value,
+        list,
+        page,
+        sortby,
+        filterby: params.filterby || [],
+        filterMeta
+    });
 }
 
 export default getSearchCache;

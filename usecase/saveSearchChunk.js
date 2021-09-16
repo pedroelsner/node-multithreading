@@ -35,8 +35,8 @@ const handleSearchChunk = async (sid, priceGroups) => {
     // Return stream data
     return JSON.stringify({
         sid,
-        priceGroups,
-        completed: false
+        completed: false,
+        list: priceGroups.slice(0, 4),
     });
 }
 
