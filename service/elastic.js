@@ -7,7 +7,9 @@ let instance;
  * @returns {object}
  */
 const init = () => {
-    instance = new Client({ node: 'http://localhost:9200' });
+    if (!instance) {
+        instance = new Client({ node: 'http://localhost:9200' });
+    }
     return instance;
 }
 

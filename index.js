@@ -30,8 +30,9 @@ app.post('/search/async', async (req, res) => {
 
         // New thread
         const pool = workerPool.get();
-        const data = await pool.getSearchCache(sid, {});
-        res.write(data);
+        let cache = await pool.getSearchCache(sid, {});
+        cache = await pool.JSONstringify(cache);
+        res.write(cache);
         res.send();
 
     } catch (err) {
@@ -51,9 +52,8 @@ app.post('/search/filter', async (req, res) => {
 
         // New thread
         const pool = workerPool.get();
-        const data = await pool.getSearchCache(sid, params);
-        res.setHeader('Content-Type', 'application/json');
-        res.send(data);
+        const cache = await pool.getSearchCache(sid, params);
+        res.send(cache);
 
     } catch (err) {
         console.error(err.message);

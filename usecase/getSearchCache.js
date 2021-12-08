@@ -3,6 +3,8 @@ import { ELASTIC_INDEX } from '../utils/constants.js';
 
 /**
  * Make sort params for elastic query
+ * 
+ * @private
  * @param {array} sortby 
  * @returns {array}
  */
@@ -11,20 +13,26 @@ const makeSort = (sortby) => {
 }
 
 /**
- * Make filter condition for elastic query
+ * Make filter math for elastic query
+ * 
+ * @private
  * @param {object} f 
  * @returns {object}
  */
 const makeFilter = (f) => {
-    return f.condition ?
-        { range: { [f.field]: { [f.condition]: f.value } } } :
-        { term: { [f.field]: f.value } }
+    return f.math ?
+        { range: { [f.field]: { [f.math]: f.value } } } :
+        Array.isArray(f.value) ?
+            { terms: { [f.field]: f.value } } :
+            { term: { [f.field]: f.value } }
 }
 
 /**
- * Return filter condition for doc and neasted field 
+ * Return filter math for doc and neasted field 
+ * 
+ * @private
  * @param {array} filterby 
- * @returns {array} [docFilter, neastedFilter]
+ * @returns {array} [rootFilter, neastedFilter]
  */
 const makeAllFilters = (filterby) => {
     return [
@@ -35,6 +43,8 @@ const makeAllFilters = (filterby) => {
 
 /**
  * Return filter meta for front-end
+ * 
+ * @private
  * @param {object} aggs Aggregation
  * @returns 
  */
@@ -84,6 +94,8 @@ const makeFilterMeta = (aggs) => {
 /**
  * Query elastic with pagination, order, filters
  * and make 'meta' for response
+ * 
+ * @public
  * @param {string} sid Search ID 
  * @param {object} body 
  * @returns {object}
@@ -93,29 +105,34 @@ const getSearchCache = async (sid, params) => {
     // Define default
     const page = params.page || { from: 0, size: 10 };
     const sortby = params.sortby || [{ field: 't', order: 'asc' }];
-    const filterby = params.filterby || [{ field: 's.tmd', condition: 'gte', value: 0 }];
+    const filterby = params.filterby || [];
 
-    // Make sort condition
+    // Make sort math
     const sort = makeSort(sortby);
 
     // Make filters confition
-    const [docFilter, nestedFilter] = makeAllFilters(filterby);
+    const [rootFilter, nestedFilter] = makeAllFilters(filterby);
 
+    // List of fields
+    const fields = [
+        "uid", "di", "t", "i", "tx", "f",
+        "d", "fr", "cf", "if", "pd", "hl"
+    ];
+    if (nestedFilter.lenght == 0) {
+        field.push("s");
+    }
 
     const { body } = await elastic().search({
         index: ELASTIC_INDEX,
         body: {
             from: page.from,
             size: page.size,
-            _source: [
-                "uid", "di", "t", "i", "tx", "f",
-                "d", "fr", "cf", "if", "pd", "hl"
-            ],
+            _source: fields,
             query: {
                 bool: {
                     filter: [
                         { term: { 'sid.keyword': sid } },
-                        ...docFilter,
+                        ...rootFilter,
                         {
                             nested: {
                                 path: 's',
@@ -171,22 +188,24 @@ const getSearchCache = async (sid, params) => {
 
     const list = body.hits.hits.map(item => {
         const entry = item._source;
-        entry.s = item.inner_hits.s.hits.hits.map(s => s._source);
+        if (!entry.s) {
+            entry.s = item.inner_hits.s.hits.hits.map(s => s._source);
+        }
         return entry;
     });
 
     const filterMeta = makeFilterMeta(body.aggregations);
 
-    return JSON.stringify({
+    return {
         sid,
         completed: true,
         total: body.hits.total.value,
         list,
         page,
         sortby,
-        filterby: params.filterby || [],
+        filterby,
         filterMeta
-    });
+    };
 }
 
 export default getSearchCache;

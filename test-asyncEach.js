@@ -1,5 +1,5 @@
 
-import asyncEach from './utils/asyncEach.js';
+import asyncEach from './utils/structure/asyncEach.js';
 
 const arr = Array(3)
     .fill(0)

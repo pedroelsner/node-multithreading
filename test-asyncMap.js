@@ -1,5 +1,5 @@
 
-import asyncMap from './utils/asyncMap.js';
+import asyncMap from './utils/structure/asyncMap.js';
 
 const arr = Array(3)
     .fill(0)
